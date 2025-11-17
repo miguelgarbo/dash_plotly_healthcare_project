@@ -1,12 +1,49 @@
 body{
 
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
 
+
+.default{
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 30px;
+    box-shadow: rgba(7, 1, 1, 0.918) 0px 1px 4px;
+}
+
+.default-night{
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 30px;
+    box-shadow: rgba(255, 255, 255, 0.404) 0px 1px 4px;
 }
 
 .border{
+    border-radius: 20px;
     padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     width: 38vw;
 }
-    
+
+.border-night{
+    border-radius: 20px;
+    padding: 30px;
+    width: 38vw;
+    box-shadow: rgba(255, 255, 255, 0.404) 0px 1px 4px;
+}
+
+
+.pink-hover {
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(255, 105, 180, 0.932);
+}
+
+.blue-hover {
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(30, 143, 255, 0.884);
+} 

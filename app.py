@@ -175,10 +175,10 @@ app.layout = dmc.MantineProvider(
                     dmc.Flex()
                 ], gap="2vw")
 
-            ], gap=30, direction="column"),
+            ], gap=30, direction="column", id="main_card", wrap="wrap"),
 
 
-        ], justify="center", align="center", mt="35px", direction="column", ta="center", pl="10vw", pr="10vw", wrap="wrap",
+        ],justify="center", align="center", mt="35px", direction="column", ta="center", pl="5vw", pr="5vw", wrap="wrap",
         )
     ]
 )
@@ -306,6 +306,19 @@ clientside_callback(
             'data-mantine-color-scheme',
             (n % 2) ? 'dark' : 'light'
         );
+        
+        const borders = document.querySelectorAll(".border");
+        borders.forEach(el => {
+            console.log("border aqui")
+            el.classList.toggle("border-night");
+        });
+        
+        const mainCard = document.querySelector("#main_card");
+        
+        mainCard.classList.toggle("default-night");
+        
+       
+        
         return window.dash_clientside.no_update      
     }
     """,
@@ -313,4 +326,21 @@ clientside_callback(
     Input("color-scheme-toggle", "n_clicks"),
 )
 
-app.run()
+@app.callback(
+    Output("main_card", "className"),
+    Input("gender-filter", "value")
+)
+def expose_filter_gender(selected_gender):
+    
+    if selected_gender:
+        if selected_gender == "Female":
+            print("aqui woman")
+            return "pink-hover"
+        else:
+            print("aqui man")
+
+            return "blue-hover"
+    else:
+        return "default"
+    
+app.run(host="0.0.0.0", port=8050)
