@@ -1,0 +1,39 @@
+# Byte-code files
+*.pyc
+__pycache__/
+*.pyd
+*.so
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+*.swp
+*.bak
+*.swo
+
+# Operating System specific files
+.DS_Store
+Thumbs.db
+
+# Test related files
+.pytest_cache/
+.coverage
+
+# Distribution / Packaging
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Log files
+*.log
+
+# Configuration files (if not intended for version control)
+config.ini
+.env
