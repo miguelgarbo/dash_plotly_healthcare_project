@@ -178,7 +178,7 @@ app.layout = dmc.MantineProvider(
             ], gap=30, direction="column"),
 
 
-        ], justify="center", align="center", mt="35px", direction="column", ta="center", pl="10vw", pr="10vw",
+        ], justify="center", align="center", mt="35px", direction="column", ta="center", pl="10vw", pr="10vw", wrap="wrap",
         )
     ]
 )
@@ -313,4 +313,4 @@ clientside_callback(
     Input("color-scheme-toggle", "n_clicks"),
 )
 
-app.run(debug=True)
+app.run()
