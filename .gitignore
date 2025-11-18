@@ -37,4 +37,3 @@ build/
 # Configuration files (if not intended for version control)
 config.ini
 .env
-app.py
