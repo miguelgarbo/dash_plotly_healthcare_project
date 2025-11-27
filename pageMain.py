@@ -1,4 +1,4 @@
-from dash import dcc, Input, Output, Dash, clientside_callback, State, html
+from dash import dcc, Dash
 import dash_mantine_components as dmc
 import plotly.express as px
 import pandas as pd

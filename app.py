@@ -253,7 +253,7 @@ def expose_filter_gender(selected_gender):
 def render_page(n_clicks):
     print(n_clicks)
     
-    if(n_clicks ==None):
+    if(n_clicks is None):
         n_clicks =0
    
     if(n_clicks >= 1):
