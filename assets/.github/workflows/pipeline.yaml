@@ -1,0 +1,34 @@
+name: CI/CD Pipeline
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    #aqui é aonde acontece o git clone e git checkout main
+      - name: Git Clone e Checkout Main
+        uses: actions/checkout@v4
+
+      - name: Set Up Python
+        uses: actions/setup-python@v6
+        with: 
+         python-version: '3.12.0'
+    #repare que agr nao puxamos mais nada do repositorio do github e estamos usando a sintaxe run
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+        working-directory: src
+
+      - name: Run App 
+        run: python -u "/home/miguelgg/codes/dash_healthcare_official/dash_plotly_healthcare_project/src/app.py"
+
+     
+
+
+
+
+
+      
+      
+      

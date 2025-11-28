@@ -3,7 +3,7 @@ import dash_mantine_components as dmc
 import plotly.express as px
 import pandas as pd
 from dash_iconify import DashIconify
-import pageMain
+import pageMain as pageMain
 
 
 def load_file():
