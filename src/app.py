@@ -42,7 +42,7 @@ app.layout = dmc.MantineProvider(
         
         dmc.Flex(dmc.Button(
                         # props as configured above:
-                        "Abrir Pagina",
+                        "Open Page",
                         id='button-page',
                         variant="filled",
                         color="blue",
