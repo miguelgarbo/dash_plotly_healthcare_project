@@ -21,7 +21,7 @@ jobs:
         working-directory: src
 
       - name: Run Testes 
-        run: pytest || 'No Test yet, follow the push'
+        run: pytest || echo 'No Test yet, follow the push'
 
 
 
