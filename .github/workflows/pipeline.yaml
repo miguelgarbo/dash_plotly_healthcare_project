@@ -20,10 +20,8 @@ jobs:
         run: pip install -r requirements.txt
         working-directory: src
 
-      - name: Run App 
-        run: python -u "src/app.py"
-
-     
+      - name: Run Testes 
+        run: pytest || 'No Test yet, follow the push'
 
 
 

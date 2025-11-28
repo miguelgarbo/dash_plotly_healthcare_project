@@ -8,6 +8,7 @@ dash_mantine_components==2.4.0
 Flask==3.1.2
 idna==3.11
 importlib_metadata==8.7.0
+iniconfig==2.3.0
 itsdangerous==2.2.0
 Jinja2==3.1.6
 MarkupSafe==3.0.3
@@ -17,6 +18,9 @@ numpy==2.3.4
 packaging==25.0
 pandas==2.3.3
 plotly==6.4.0
+pluggy==1.6.0
+Pygments==2.19.2
+pytest==9.0.1
 python-dateutil==2.9.0.post0
 pytz==2025.2
 requests==2.32.5
